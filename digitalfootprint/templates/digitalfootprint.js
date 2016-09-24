@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+$(document).ready(function() {
 	$("img.a").hover(
 		function() {
 	    $( this ).stop().animate({"opacity": "0"}, "fast"); // this makes the black and white image look like it disapears. (i know i spelled disappears wrong, but i dont care to change it rn)

@@ -12,6 +12,14 @@ handlers:
 - url: /static
   static_dir: static
 
+- url: /digitalfootprint\.js
+  static_files: templates/digitalfootprint.js
+  upload: templates/digitalfootprint\.js
+
+- url: /stylesheet\.css
+  static_files: static/stylesheet.css
+  upload: static/stylesheet\.css
+
 - url: .*
   script: main.app
 
