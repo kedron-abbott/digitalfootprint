@@ -1,6 +1,6 @@
 .icons {
-  width: 128px;
-  height: 128px;
+  width: 256px;
+  height: 256px;
   margin: 10px;
   display: inline-block;
 }
@@ -19,7 +19,7 @@
 
 #bw {
   position: relative;
-  width: 660px;
+  width: 800px;
   height: 100%;
 }
 
