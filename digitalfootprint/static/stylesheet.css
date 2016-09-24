@@ -1,26 +1,43 @@
 .icons {
-  width: 256px;
-  height: 256px;
-  margin: 10px;
+  max-width: 256px;
+  max-height: 256px;
   display: inline-block;
+  /* display: inline-block; */
 }
 
 #facebook {
   background-image: url("static/SocialIcons/facebook.png");
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 250px;
 }
 
 #instagram {
   background-image: url("static/SocialIcons/instagram.png");
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 250px;
 }
 
 #twitter {
   background-image: url("static/SocialIcons/twitter.png");
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 250px;
+}
+#gplus {
+  background-image: url("static/SocialIcons/gplus.png");
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 250px;
 }
 
 #bw {
   position: relative;
-  width: 800px;
-  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 img.a {
