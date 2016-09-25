@@ -57,17 +57,17 @@ img.a {
 }
 
 body.bg-0 {
-  background-image: url("backgroundfacebook.png");
+  background-image: url("static/backgrounds/backgroundfacebook.png");
 }
 
 body.bg-1 {
-  background-image: url("backgroundgplus.png");
+  background-image: url("static/backgrounds/backgroundgplus.png");
 }
 
 body.bg-2 {
-  background-image: url("backgroundinstagram.png");
+  background-image: url("static/backgrounds/backgroundinstagram.png");
 }
 
 body.bg-3 {
-  background-image: url("backgroundtwitter.png");
+  background-image: url("static/backgrounds/backgroundtwitter.png");
 }
