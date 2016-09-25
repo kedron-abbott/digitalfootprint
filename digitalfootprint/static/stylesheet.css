@@ -10,9 +10,6 @@ html {
 body {
   background-image: url("static/backgrounds/background.jpg");
 }
-#facebook {
-  background-image: url("static/backgrounds/backgroundfacebook.jpg");
-}
 #titletext {
   position: relative;
   width: 100%;
@@ -59,12 +56,12 @@ img.a {
   z-index: 10;
 }
 
-body.facebook {
-  background-image: url("static/backgrounds/backgroundfacebook.png");
+body.bg-0 {
+  background-image: url("static/backgrounds/backgroundgplus.png");
 }
 
 body.bg-1 {
-  background-image: url("static/backgrounds/backgroundgplus.png");
+  background-image: url("static/backgrounds/backgroundfacebook.png");
 }
 
 body.bg-2 {
