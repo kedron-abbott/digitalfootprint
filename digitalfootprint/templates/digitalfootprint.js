@@ -1,12 +1,16 @@
 $(document).ready(function() {
+	var currentBackground = 0;
 	$("img.a").hover(
 		function() {
 	    $( this ).stop().animate({"opacity": "0"}, "fast"); // this makes the black and white image look like it disapears. (i know i spelled disappears wrong, but i dont care to change it rn)
-	    console.log("fading out: ");
+			currentBackground = (currentBackground +1) % 4;
+    	$('body').addClass("bg-"+currentBackground);
+			console.log("fading out: ");
 		},
 		function() {
 	    if (!$(this).data("clicked")) { //this part checks to see if the value of clicked is false (basically the either never clicked or they unclicked) and if the value is that way, it makes the black and white fade back in.
 			    $( this ).stop().animate({"opacity": "1"}, "fast");
+					$('body').removeClass("bg-0 bg-1 bg-2 bg-3");
 	      	console.log("fading in: ");
 	     }
 		}
