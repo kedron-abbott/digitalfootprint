@@ -4,6 +4,9 @@
   display: inline-block;
   /* display: inline-block; */
 }
+body {
+  background-image: url("static/background.jpg");
+}
 
 #facebook {
   background-image: url("static/SocialIcons/facebook.png");
