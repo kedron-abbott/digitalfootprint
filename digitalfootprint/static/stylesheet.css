@@ -4,35 +4,44 @@
   display: inline-block;
   /* display: inline-block; */
 }
-body {
-  background-image: url("static/background.jpg");
+html {
+  padding-top: 50px;
 }
-
+body {
+  background-image: url("static/backgrounds/background.jpg");
+}
+#titletext {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
 #facebook {
   background-image: url("static/SocialIcons/facebook.png");
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: 250px;
+  margin-top: 50px;
 }
 
 #instagram {
   background-image: url("static/SocialIcons/instagram.png");
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: 250px;
+  margin-top: 50px;
 }
 
 #twitter {
   background-image: url("static/SocialIcons/twitter.png");
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: 250px;
+  margin-top: 50px;
 }
 #gplus {
   background-image: url("static/SocialIcons/gplus.png");
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: 250px;
+  margin-top: 50px;
 }
 
 #bw {
