@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>TEST</title>
+  </head>
+
+  <body>
+
+    <script>
+
+      //fb sdk setup
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '1823063241261080',
+          xfbml      : true,
+          version    : 'v2.7'
+        });
+
+        FB.getLoginStatus(function(response) {
+          if (response.status === 'connected') {
+            console.log('Logged in.');
+            var uid = response.authResponse.userID;
+            var accessToken = response.authResponse.accessToken;
+          } else {
+            console.log('initiate FB login...');
+            FB.login();
+          }
+
+          FB.api(
+            '/' + uid,
+            'GET',
+            {"fields":"name,email"},
+            function(response) {
+              console.log(response);
+
+            }
+          );
+
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+         console.log("here");
+      }(document, 'script', 'facebook-jssdk'));
+
+      // //---------------------
+
+      // function httpGet(theUrl) {
+      //     var xmlHttp = new XMLHttpRequest();
+      //     xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+      //     xmlHttp.send( null );
+      //     return xmlHttp.responseText;
+      // }
+      //
+      // window.alert(httpGet("http://httpbin.org/ip"));
+
+    </script>
+  </body>
+
+</html>
