@@ -10,6 +10,9 @@ html {
 body {
   background-image: url("static/backgrounds/background.jpg");
 }
+#facebook {
+  background-image: url("static/backgrounds/backgroundfacebook.jpg");
+}
 #titletext {
   position: relative;
   width: 100%;
@@ -70,4 +73,43 @@ body.bg-2 {
 
 body.bg-3 {
   background-image: url("static/backgrounds/backgroundtwitter.png");
+}
+
+.flip-container {
+  perspective: 1000px;
+  width: 75%;
+}
+
+.flip-container:hover .flipper, .flip-container:hover .flipper {
+  transform: rotateY(180deg);
+}
+
+.flip-name, .front, .back {
+  margin: 10px;
+}
+
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.front, .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.front {
+  z-index: 2;
+  transform: rotateY(0deg);
+  background-color: red;
+}
+
+.back {
+  transform: rotateY(180deg);
+  background-color: blue;
 }
